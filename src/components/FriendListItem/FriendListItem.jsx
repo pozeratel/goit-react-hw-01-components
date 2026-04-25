@@ -1,10 +1,11 @@
+import style from "../FriendListItem/FriendListItem.module.css";
+
 export const FriendListItem = ({ avatar, name, isOnline }) => {
-  const items = [avatar, name, isOnline];
   return (
-    <li className="friend-item">
-      <img src={avatar} alt={name} width="48" />
-      <p>{name}</p>
-      <p>{isOnline ? "Online" : "Offline"}</p>
+    <li className={style.friendItem}>
+      <span className={isOnline ? "status online" : "status offline"}></span>
+      <img className={style.avatar} src={avatar} alt={name} />
+      <p className={style.name}>{name}</p>
     </li>
   );
 };
