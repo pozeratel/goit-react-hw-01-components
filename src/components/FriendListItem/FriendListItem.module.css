@@ -9,7 +9,7 @@
   background: #e6e6e6;
   border-radius: 8px;
 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .status {
@@ -37,4 +37,24 @@
 .name {
   font-size: 20px;
   font-weight: 500;
+}
+
+.online {
+  display: block;
+  background-color: #4caf50;
+  position: relative;
+  width: 10px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+
+
+.offline {
+  display: block;
+  background-color: red;
+  position: relative;
+  width: 10px;
+  height: 8px;
+  border-radius: 50%;
 }
